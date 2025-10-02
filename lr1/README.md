@@ -67,10 +67,10 @@ python3 -m pytest tests/ -v
 
 Приложение использует два бесплатных API для переводов:
 
-### LibreTranslate
-- **URL**: https://libretranslate.com
-- **Тип**: POST запросы
-- **Особенности**: Автоопределение языка, высокая точность
+### LingvaTranslate
+- **URL**: https://lingva.ml/api/v1
+- **Тип**: GET запросы
+- **Особенности**: Публичный фронтенд Google Translate, большая база данных
 
 ### MyMemory
 - **URL**: https://api.mymemory.translated.net
@@ -89,7 +89,6 @@ python3 -m pytest tests/ -v
 - **Японский** (ja)
 - **Корейский** (ko)
 - **Китайский** (zh)
-- **Автоопределение** (auto)
 
 ## Метрики сравнения
 
@@ -105,10 +104,6 @@ python3 -m pytest tests/ -v
 ```bash
 python3 -m pytest tests/ -v
 ```
-
-### API тесты:
-- Импортируйте `postman/Translation_API_collection.json` в Postman
-- Запустите тесты для обоих API
 
 ## Требования
 
